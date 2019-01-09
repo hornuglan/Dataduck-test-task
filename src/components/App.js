@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import FormValid from './FormValid';
-import SignIn from './SIgnIn';
-import TestForm from './TestForm';
 
 class App extends React.Component {
     render() {

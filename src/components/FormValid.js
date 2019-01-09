@@ -1,7 +1,7 @@
 import React from 'react';
 import {Field, Form, withFormik} from 'formik';
 import * as Yup from 'yup';
-import Debug from './Debugger';
+// import Debug from './Debugger';
 import ErrorMessage from './ErrorMessage';
 import ErrorPopUp from './ErrorPopUp';
 
@@ -19,7 +19,7 @@ const FormValid = ({values, errors, touched, isSubmitting}) => (
                     <div className="form__password">
                             {touched.password && errors.password && <ErrorPopUp error={errors.password} />}
                             <Field type="password" name="password" placeholder="" />
-                            <label className="form__password-label" htmlFor="password">Введите пароль</label>
+                            {/* <label className="form__password-label" htmlFor="password">Введите пароль</label> */}
                         </div>
                     </div>
                     <div className="form__wrapper">
@@ -47,6 +47,7 @@ const FormValid = ({values, errors, touched, isSubmitting}) => (
                     </div>
                     <div className="form__wrapper">
                         <label className="checkbox">
+                        {touched.checkbox && errors.checkbox && <ErrorPopUp error={errors.checkbox} />}
                         { values.checkbox ?
                               <Field className="checkbox__input" type="checkbox" name="checkbox" checked /> :
                               <Field className="checkbox__input" type="checkbox" name="checkbox" />
