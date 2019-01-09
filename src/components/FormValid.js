@@ -19,7 +19,7 @@ const FormValid = ({values, errors, touched, isSubmitting}) => (
                     <div className="form__password">
                             {touched.password && errors.password && <ErrorPopUp error={errors.password} />}
                             <Field type="password" name="password" placeholder="" />
-                            {/* <label className="form__password-label" htmlFor="password">Введите пароль</label> */}
+                            <label className="form__password-label" htmlFor="password">Введите пароль</label>
                         </div>
                     </div>
                     <div className="form__wrapper">
