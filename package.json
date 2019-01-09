@@ -1,5 +1,5 @@
 {
-  "name": "cotd",
+  "name": "dataduck-test-task",
   "version": "0.0.3",
   "private": true,
   "devDependencies": {
@@ -8,15 +8,9 @@
   },
   "dependencies": {
     "autoprefixer-stylus": "classcraft/autoprefixer-stylus#6b983717560ebe",
-    "firebase": "^5.7.0",
     "formik": "1.4.1",
-    "prop-types": "^15.6.0",
-    "re-base": "4.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router-dom": "^4.2.2",
-    "react-transition-group": "^2.2.1",
-    "serve": "^10.1.1",
     "stylus": "^0.54.5",
     "yup": "^0.26.6"
   },
