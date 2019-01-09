@@ -48,7 +48,7 @@ const FormValid = ({values, errors, touched}) => (
                     <div className="form__wrapper">
                         <label className="checkbox">
                         {touched.checkbox && errors.checkbox && <ErrorPopUp error={errors.checkbox} />}
-                            <Field className="checkbox__input" type="checkbox" name="checkbox" defaultChecked={values.checkbox} />
+                            <Field className="checkbox__input" type="checkbox" name="checkbox" checked={values.checkbox} />
                             <span className="checkbox__label"></span>
                             <p className="checkbox__assignment">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</p>
                         </label>

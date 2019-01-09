@@ -38,7 +38,8 @@
   padding-right: 20px;
 }
 .form-wrapper {
-  width: 50%;
+  width: 440px;
+  padding-left: 42px;
 }
 .image {
   position: relative;
@@ -57,9 +58,6 @@
   .wrapper {
     max-width: 1120px;
   }
-  .form-wrapper {
-    width: 100%;
-  }
   .text {
     -webkit-box-pack: center;
             justify-content: center;
@@ -67,7 +65,8 @@
 }
 @media screen and (max-width: 768px) {
   .form-wrapper {
-    width: 100 $;
+    width: 100%;
+    padding-left: 0;
   }
   .text__title {
     text-align: center;
@@ -339,6 +338,7 @@
 }
 .header .line-wrapper {
   width: 140px;
+  padding-left: 42px;
 }
 .header .line {
   width: 100%;
@@ -348,6 +348,11 @@
   width: 100%;
   height: 16px;
   background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .header .line-wrapper {
+    padding-left: 0;
+  }
 }
 .signIn__button {
   display: -webkit-box;

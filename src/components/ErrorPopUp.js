@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ErrorPopUp = () => (
+const ErrorPopUp = (props) => (
     <div className="popup">
     <div className="popup__wrapper">
-        {this.props.error}
+        {props.error}
     </div>
     <div className="popup__tail"></div>
 </div>
