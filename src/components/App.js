@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from './Header';
-import FormValid from './FormValid';
+import SignUpForm from './SignUpForm';
 
-class App extends React.Component {
-    render() {
-        return(
-            <div className="container">
+const App = () => (
+    <div className="container">
             <div className="wrapper">
                 <Header/>
                 <div className="text">
@@ -15,7 +13,7 @@ class App extends React.Component {
                             <li className="text__item">Нет спреда — торгуйте с прозрачными и точными котировками</li>
                             <li className="text__item">Достаточно депозита в $10, чтобы начать торговать</li>
                         </ul>
-                        <FormValid />
+                        <SignUpForm />
                     </div>
                     <div className="image">
                         <div className="image__img"></div>
@@ -23,8 +21,7 @@ class App extends React.Component {
                 </div>
             </div>
           </div>
-        )
-    }
-}
+)
+
 
 export default App;

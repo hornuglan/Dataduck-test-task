@@ -1,12 +1,8 @@
 import React from 'react';
-import SignIn from './SIgnIn';
+import SignIn from './SignIn';
 
-  
-
-class Header extends React.Component {
-    render() {
-        return(
-            <header className="header"> 
+const Header = () => (
+    <header className="header"> 
             <div className="header__wrapper">
                 <div className="line-wrapper">
                     <div className="line"><span className="line__inner"></span></div>
@@ -14,8 +10,6 @@ class Header extends React.Component {
                 <SignIn />
             </div>
         </header>
-        )
-    }
-}
+)
 
 export default Header;
