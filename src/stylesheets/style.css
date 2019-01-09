@@ -15,7 +15,15 @@
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
+.text__title {
+  font-family: Arial;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 48px;
+}
 .text__list {
+  font-family: Arial;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -161,7 +169,7 @@
   letter-spacing: 0.1em;
   text-align: center;
   line-height: 24px;
-  font-family: OpenSans-Bold;
+  font-family: Arial;
   font-weight: 700;
   letter-spacing: 0;
   color: #fff;
@@ -208,6 +216,7 @@
   background-color: rgba(245,248,250,0.1);
   color: #fff;
   outline: none;
+  box-sizing: border-box;
 }
 .form__email input[type="email"] + label,
 .form__password input[type="email"] + label,
@@ -398,6 +407,7 @@ h1 {
   line-height: 48px;
   font-weight: bold;
   color: #fff;
+  font-family: OpenSans-Bold;
 }
 p {
   line-height: 24px;

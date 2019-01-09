@@ -12,18 +12,18 @@ const FormValid = ({values, errors, touched}) => (
                         <div className="form__email">
                             {touched.email && errors.email && <ErrorPopUp error={errors.email} />}
                             <Field type="email" name="email" placeholder="" />
-                            <label className="form__email-label" htmlFor="email">Your e-mail</label>
+                            <label className="form__email-label" htmlFor="email">Ваш e-mail</label>
                         </div>
                     </div>
                     <div className="form__wrapper">
                     <div className="form__password">
                             {touched.password && errors.password && <ErrorPopUp error={errors.password} />}
                             <Field type="password" name="password" placeholder="" />
-                            <label className="form__password-label" htmlFor="password">Введите пароль</label>
+                            <label className="form__password-label" htmlFor="password">Придумайте пароль</label>
                         </div>
                     </div>
                     <div className="form__wrapper">
-                        <p className="form__label-currency">Валюта для ввода и вывода средств</p>
+                        <p className="form__label-currency">Валюта для ввода и&nbsp;вывода средств</p>
                         <div id="currency" className="currency">
                             <label>
                                 <div className="currency__type">
@@ -50,7 +50,7 @@ const FormValid = ({values, errors, touched}) => (
                         {touched.checkbox && errors.checkbox && <ErrorPopUp error={errors.checkbox} />}
                             <Field className="checkbox__input" type="checkbox" name="checkbox" checked={values.checkbox} />
                             <span className="checkbox__label"></span>
-                            <p className="checkbox__assignment">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</p>
+                            <p className="checkbox__assignment">Я&nbsp;совершеннолетний, ознакомился и&nbsp;принимаю соглашение об&nbsp;оказании услуг.</p>
                         </label>
                     </div>
                     {errors.emailAlreadyTaken && <ErrorMessage error={errors.emailAlreadyTaken}/>}

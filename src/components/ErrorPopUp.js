@@ -5,7 +5,7 @@ const ErrorPopUp = (props) => (
     <div className="popup__wrapper">
         {props.error}
     </div>
-    <div className="popup__tail"></div>
+    {/* <div className="popup__tail"></div> */}
 </div>
 )
  
