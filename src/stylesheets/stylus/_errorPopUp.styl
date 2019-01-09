@@ -1,0 +1,28 @@
+@import '/_colours.styl'
+
+.popup
+  position: absolute
+  bottom: calc(100% + 10px)
+  left: 0
+  right: 0
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: bgerror 
+    width: 71%
+    padding: 8px 24px
+    margin: auto
+    border-radius: 4px
+    text-align: center
+    color: secondary-text
+    &:after
+      position: absolute
+      top: 100%
+      left: 50%
+      content: ''
+      height: 0
+      width: 0
+      border: 9px solid
+      border-color: bgerror rgba(255, 212, 52, 0) rgba(255, 212, 52, 0)
+      margin-left: -9px

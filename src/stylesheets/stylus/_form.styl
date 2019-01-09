@@ -1,0 +1,161 @@
+@import '/_colours.styl'
+
+.form
+  &__wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    position: relative
+    margin: 16px 0
+    width: 100%
+    p
+      display: block
+      margin: 0
+      font-size: 12px
+      line-height: 16px
+      &:first-child
+        margin-right: 16px
+      &:last-child
+        margin-left: 16px
+
+  &__button-wrapper
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+    position: relative;
+  &__button
+    width: 100%;
+    height: 56px;
+    background-color: color-btn;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-align: center;
+    line-height: 24px;
+    font-family: OpenSans-Bold;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: secondary-text
+    cursor: pointer;
+    outline: none;
+
+  .currency
+    display: flex
+    align-items: center
+    min-width: 65%
+    label
+      width: (100%/3)
+      &:first-child
+        span
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+      &:last-child
+        span
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+          &:after
+            content: none
+  &:nth-last-child(2)
+    margin: 24px 0 32px
+.form__email, 
+.form__password
+  width: 100%
+  min-height: 64px
+  input
+    &[type="email"], 
+    &[type="password"]
+      width: 100%
+      // height: 100%
+      padding: 32px 24px 8px
+      border: none
+      border-radius: 4px
+      background-color: rgba(#F5F8FA, .1)
+      color: secondary-text
+      outline: none
+      & + label
+        display: block
+        width: 100%
+        padding: 0 24px
+        transform: translateY(-40px)
+        color: primary-text
+        transition: all ease-out 0.3s
+        cursor: text
+      &:focus, 
+      &:not(:placeholder-shown)
+        border: 1px solid #20A86B
+        & + label
+          transform: translateY(-52px)
+          font-size: 12px
+      &.error
+        border: 1px solid bgerror 
+      &:-webkit-autofill
+        -webkit-box-shadow: inset 0 0 0 50px #212d3e !important
+        -webkit-text-fill-color: #fff !important
+        color: #fff !important
+.currency__type
+  input
+    &[type="radio"]
+      display: none
+      & + span
+        display: block
+        text-align: center
+        position: relative
+        width: 100%
+        height: 32px
+        line-height: 32px
+        background-color: rgba(#F5F8FA, .1)
+        color: primary-text
+        cursor: pointer
+        &:after
+          content: ''
+          position: absolute
+          right: 0
+          top: 0
+          bottom: 0
+          width: 1px
+          height: 24px
+          margin: auto
+          background-color: bgcolor
+      &:checked
+        & + span
+          border: 1px solid #20A86B
+          background-color: bgcolor
+          &:after
+            content: none
+.checkbox
+  display: flex
+.checkbox__input
+  display: none
+.checkbox__label
+  display: inline-block
+  cursor pointer
+  position: relative
+  width: 32px
+  height: 32px
+  border-radius: 4px
+  background-color: #212d3e
+.checkbox__assignment
+  // display: inline
+.checkbox__input:checked + .checkbox__label::before
+  display: block
+  content: ""
+  position: absolute
+  background-image: url('./images/check.png')
+  background-position: center center
+  background-repeat: no-repeat
+  width: 32px
+  height: 32px
+
+@media screen and (max-width: 1120px)
+  .checkbox
+    &__assignment
+      width: 70%
+
+
+@media screen and (max-width: 768px)
+  .checkbox
+    &__assignment
+      width: 73%
+
