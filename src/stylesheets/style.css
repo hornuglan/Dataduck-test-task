@@ -231,6 +231,7 @@
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
   cursor: text;
+  box-sizing: content-box;
 }
 .form__email input[type="email"]:focus,
 .form__password input[type="email"]:focus,
@@ -259,14 +260,6 @@
 .form__email input[type="password"].error,
 .form__password input[type="password"].error {
   border: 1px solid #e15433;
-}
-.form__email input[type="email"]:-webkit-autofill,
-.form__password input[type="email"]:-webkit-autofill,
-.form__email input[type="password"]:-webkit-autofill,
-.form__password input[type="password"]:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px #212d3e !important;
-  -webkit-text-fill-color: #fff !important;
-  color: #fff !important;
 }
 .currency__type input[type="radio"] {
   display: none;

@@ -83,6 +83,7 @@
         color: primary-text
         transition: all ease-out 0.3s
         cursor: text
+        box-sizing: content-box
       &:focus, 
       &:not(:placeholder-shown)
         border: 1px solid #20A86B
@@ -91,10 +92,7 @@
           font-size: 12px
       &.error
         border: 1px solid bgerror 
-      &:-webkit-autofill
-        -webkit-box-shadow: inset 0 0 0 50px #212d3e !important
-        -webkit-text-fill-color: #fff !important
-        color: #fff !important
+       
 .currency__type
   input
     &[type="radio"]
@@ -159,4 +157,3 @@
   .checkbox
     &__assignment
       width: 73%
-
