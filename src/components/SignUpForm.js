@@ -6,7 +6,7 @@ import ErrorPopUp from './ErrorPopUp';
 
 
 const FormValid = ({ values, errors, touched }) => (
-  <Form className="form">
+  <Form className="form" method="POST">
     <div className="form__wrapper">
       <div className="form__email">
         {touched.email && errors.email && <ErrorPopUp error={errors.email} />}
