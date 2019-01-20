@@ -8,10 +8,10 @@ const App = () => (
       <Header />
       <div className="text">
         <div className="form-wrapper">
-          <h1 className="text__title">Начните торговать  прямо сейчас</h1>
+          <h1 className="text__title">Sign Up&nbsp;Form</h1>
           <ul className="text__list">
-            <li className="text__item">Нет спреда&nbsp;&mdash; торгуйте с&nbsp;прозрачными и&nbsp;точными котировками</li>
-            <li className="text__item">Достаточно депозита в&nbsp;$10, чтобы начать торговать</li>
+            <li className="text__item">Nam liber tempor cum soluta nobis eleifend option</li>
+            <li className="text__item">Eodem modo typi, qui nunc nobis videntur parum futurum</li>
           </ul>
           <SignUpForm />
         </div>

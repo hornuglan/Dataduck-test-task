@@ -11,35 +11,35 @@ const FormValid = ({ values, errors, touched }) => (
       <div className="form__email">
         {touched.email && errors.email && <ErrorPopUp error={errors.email} />}
         <Field type="email" name="email" placeholder="" id="email" />
-        <label className="form__email-label" htmlFor="email">Ваш e-mail</label>
+        <label className="form__email-label" htmlFor="email">Enter your e-mail</label>
       </div>
     </div>
     <div className="form__wrapper">
       <div className="form__password">
         {touched.password && errors.password && <ErrorPopUp error={errors.password} />}
         <Field type="password" name="password" placeholder="" id="password" />
-        <label className="form__password-label" htmlFor="password">Придумайте пароль</label>
+        <label className="form__password-label" htmlFor="password">Enter your password</label>
       </div>
     </div>
     <div className="form__wrapper">
-      <p className="form__label-currency">Валюта для ввода и&nbsp;вывода средств</p>
+      <p className="form__label-currency">Choose currency</p>
       <div id="currency" className="currency">
         <label>
           <div className="currency__type">
             <Field type="radio" name="currency" value="ruble" checked={values.currency === 'ruble'} />
-            <span>Р</span>
+            <span>&#8381;</span>
           </div>
         </label>
         <label>
           <div className="currency__type">
             <Field type="radio" name="currency" value="dollar" checked={values.currency === 'dollar'} />
-            <span>$</span>
+            <span>&#36;</span>
           </div>
         </label>
         <label>
           <div className="currency__type">
             <Field type="radio" name="currency" value="euro" checked={values.currency === 'euro'} />
-            <span>E</span>
+            <span>&euro;</span>
           </div>
         </label>
       </div>
@@ -49,12 +49,12 @@ const FormValid = ({ values, errors, touched }) => (
         {touched.checkbox && errors.checkbox && <ErrorPopUp error={errors.checkbox} />}
         <Field className="checkbox__input" type="checkbox" name="checkbox" checked={values.checkbox} />
         <span className="checkbox__label"></span>
-        <p className="checkbox__assignment">Я&nbsp;совершеннолетний, ознакомился и&nbsp;принимаю соглашение об&nbsp;оказании услуг.</p>
+        <p className="checkbox__assignment">Click here to&nbsp;indicate that you have read and agree to&nbsp;the terms presented in&nbsp;the Terms and Conditions agreement</p>
       </label>
     </div>
     {errors.emailAlreadyTaken && <ErrorMessage error={errors.emailAlreadyTaken} />}
     <div className="form__button-wrapper">
-      <button className="form__button" component="button" name="submit" type="submit">Зарегистрироваться</button>
+      <button className="form__button" component="button" name="submit" type="submit">Sign&nbsp;Up</button>
     </div>
   </Form>
 )

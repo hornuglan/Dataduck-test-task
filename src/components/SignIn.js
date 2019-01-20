@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignIn = () => (
   <div className="signIn">
-    <button className="signIn__button">Войти</button>
+    <button className="signIn__button">Sign&nbsp;In</button>
   </div>
 )
 
