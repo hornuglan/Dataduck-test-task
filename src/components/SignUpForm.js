@@ -69,13 +69,13 @@ const SignUpForm = withFormik({
     }
   },
   validationSchema: Yup.object().shape({
-    email: Yup.string().email("Неверный e-mail").required("Поле обязательно для заполнения"),
-    password: Yup.string().min(4, "Неверный пароль").required("Поле обязательно для заполнения"),
-    checkbox: Yup.boolean().oneOf([true], "Необходимо принять условия Соглашения")
+    email: Yup.string().email("Invalid e-mail").required("Required field"),
+    password: Yup.string().min(4, "Invalid e-mail").required("Required field"),
+    checkbox: Yup.boolean().oneOf([true], "Required field")
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     if (values.email === 'test@gmail.com') {
-      setErrors({ emailAlreadyTaken: "Учётная запись с указанным e-mail уже существует" })
+      setErrors({ emailAlreadyTaken: "This e-mail is&nbsp;already taken" })
     } else {
       resetForm()
     }
