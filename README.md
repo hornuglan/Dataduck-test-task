@@ -1,7 +1,7 @@
 ## Decsription
-- Responsive sign up form
-- Валидация вводимых данных происходит до отправки формы - проверка происходит на соответствие требованиям (корректная форма e-mail, пароль не менее 4 символов, обязательное принятие условия Соглашения)
-- В данной реализации отсутствует backend часть, поэтому ошибку "Указанный e-mail уже существует" можно получить с помощью специального адреса "test@gmail.com"
+- Responsive sign up form form laptops and mobile devices
+- Data is checked before form submitting - correct/incorrect e-mail, password must be more than 4 symbols, terms of Agreement must be accepted
+- This form was realized without backend - popup with "This e-mail is already taken" messsage is called by submitting form with "test@gmail.com" e-mail 
 - Form was made with React; Formik and Yup were used for form validation, Stylus was used for styles
 
 ## Запуск
