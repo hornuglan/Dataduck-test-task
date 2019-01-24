@@ -58,7 +58,8 @@
   position: absolute;
   right: -27px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./images/laptop.png");
 }
@@ -379,6 +380,8 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: Arial;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-size: 36px;
