@@ -17,6 +17,7 @@
       background-color: bgcolor
       color: secondary-text
       cursor: pointer
+      transition ease-in-out 0.3s
       &:before
         content: ''
         display: inline-block
@@ -29,3 +30,5 @@
         background-image: url("./images/user.svg")
         background-repeat: no-repeat
         background-position: center
+      &:hover
+        transform scale(1.1)

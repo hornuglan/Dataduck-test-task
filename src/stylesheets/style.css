@@ -181,6 +181,14 @@
   color: #fff;
   cursor: pointer;
   outline: none;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.form__button:hover {
+  color: #1c945d;
+  background-color: #fff;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 .form .currency {
   display: -webkit-box;
@@ -361,6 +369,8 @@
   background-color: #42254b;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 .signIn__button:before {
   content: '';
@@ -374,6 +384,10 @@
   background-image: url("./images/user.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.signIn__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 body {
   background-color: #42254b;
