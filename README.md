@@ -9,6 +9,6 @@
 1. Go to the directory
 2. For succesful start of the application Node.js v 8.9.4 or higher is required
 3. Run the following command:
-```git clone git@github.com:hornuglan/Dataduck-test-task.git && cd Dataduck-test-task && npm install && npm start```
+```git clone git@github.com:hornuglan/HTML-CSS-Stylus-React-Form.git && cd HTML-CSS-Stylus-React-Form && npm install && npm start```
 4. For the next application start use `npm start`
 
