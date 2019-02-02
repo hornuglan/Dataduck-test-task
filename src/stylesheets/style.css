@@ -390,6 +390,7 @@
           transform: scale(1.1);
 }
 body {
+  min-width: 320px;
   background-color: #42254b;
   overflow-x: hidden;
   box-sizing: border-box;
