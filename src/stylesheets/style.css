@@ -92,7 +92,7 @@
   border-radius: 4px;
   color: #fff;
   line-height: 24px;
-  background-color: #e15433;
+  background-color: #c37e25;
   background-image: url("./images/attention.png");
   background-position: 25px center;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-color: #e15433;
+  background-color: #c37e25;
   width: 71%;
   padding: 8px 24px;
   margin: auto;
@@ -126,7 +126,7 @@
   height: 0;
   width: 0;
   border: 9px solid;
-  border-color: #e15433 rgba(255,212,52,0) rgba(255,212,52,0);
+  border-color: #c37e25 rgba(255,212,52,0) rgba(255,212,52,0);
   margin-left: -9px;
 }
 .form__wrapper {
@@ -269,7 +269,7 @@
 .form__password input[type="email"].error,
 .form__email input[type="password"].error,
 .form__password input[type="password"].error {
-  border: 1px solid #e15433;
+  border: 1px solid #c37e25;
 }
 .currency__type input[type="radio"] {
   display: none;
