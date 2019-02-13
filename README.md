@@ -5,7 +5,7 @@
 - Form was made with React; Formik and Yup were used for form validation, Stylus was used for styles
 
 ## Start
-Для первого запуска dev сервера необходимо:
+To set up dev server:
 1. Go to the directory
 2. For succesful start of the application Node.js v 8.9.4 or higher is required
 3. Run the following command:
